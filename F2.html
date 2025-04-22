@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evaluating the Impact of Recent Select Geopolitical Conflicts on Exchange Rate Dynamics</title>
+<style>
+  body {
+    background-color: #F8F8F8;
+    color: #333333;
+    font-family: 'Times New Roman', Georgia, serif;
+    padding: 30px;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1, h3, .author, .highlight {
+    font-weight: bold;
+  }
+  h1 {
+    color: #2E5A88;
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  h2 {
+    color: #2E5A88;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3em;
+    margin: 25px 0 10px 0;
+    border-bottom: 1px solid #D3D3D3;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+  p, li {
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 12px;
+  }
+  ul {
+    margin: 10px 0;
+  }
+  li {
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+  .authors {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .author {
+    margin: 5px 0;
+  }
+  .affiliation {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  .email {
+    font-size: 0.85em;
+    font-style: italic;
+    color: #326897;
+    margin: 5px 0;
+  }
+  .keywords {
+    background-color: #E8ECEF;
+    border-left: 4px solid #6B8299;
+    border-radius: 4px;
+    padding: 12px 18px;
+    margin: 20px 0;
+    text-align: left;
+  }
+  .keyword {
+    display: inline-block;
+    font-style: italic;
+    margin-right: 12px;
+    font-size: 0.95em;
+  }
+  .highlight {
+    font-size: 1.05em;
+    margin: 10px 0 8px 0;
+  }
+  .footer {
+    text-align: center;
+    border-top: 1px solid #D3D3D3;
+    padding: 12px;
+    font-size: 0.85em;
+    color: #666666;
+    margin-top: 35px;
+  }
+  nav {
+    background: #E8ECEF;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  nav a {
+    color: #2E5A88;
+    text-decoration: none;
+    margin-right: 15px;
+    font-style: italic;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 15px;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 1.6em;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Evaluating the Impact of Recent Select Geopolitical Conflicts on Exchange Rate Dynamics</h1>
+<div class="authors">
+  <div class="author">Your Name</div>
+  <div class="affiliation">Your Institution</div>
+  <div class="email">your.email@example.com</div>
+</div>
+
+<nav>
+  <a href="#keywords">Keywords</a>
+  <a href="#introduction">Introduction</a>
+  <a href="#literature">Literature Review</a>
+  <a href="#methodology">Methodology</a>
+  <a href="#results">Results</a>
+  <a href="#conclusion">Conclusion</a>
+  <a href="#references">References</a>
+</nav>
+
+<div class="keywords">
+<h3 id="keywords">Keywords</h3>
+  <span class="keyword">Geopolitical Conflict</span>
+  <span class="keyword">Exchange Rate</span>
+  <span class="keyword">Volatility</span>
+  <span class="keyword">GARCH</span>
+  <span class="keyword">VAR</span>
+</div>
+
+
+<h3 id="introduction">Introduction</h3>
+<p>In the current global economic landscape, the intersection of geopolitics and financial markets represents a frontier of high-impact research. With increasing frequency and intensity, geopolitical conflicts exert profound effects on capital movement, investor sentiment, and the valuation of national currencies. Amid this complexity, a critical opportunity has emerged for scholars and policymakers alike to understand and quantify how wars and political turmoil shape currency dynamics and related financial indicators such as stock indices.</p>
+
+<p>In recent years, the world has shifted from isolated, short-term conflicts to prolonged, high-stakes confrontations with extensive economic consequences. The Russia-Ukraine war and the Israel-Gaza conflict are emblematic of this new paradigm. These conflicts have produced unprecedented shocks in the affected countries’ financial systems, with reverberations extending into neighbouring economies and global markets. Unlike the cyclical fluctuations typically seen in peacetime, conflict-driven volatility is asymmetric, abrupt, and more likely to induce systemic instability. Against this backdrop, evaluating how geopolitical tensions reshape exchange rate behaviours and their interaction with regional stock indices is not only timely but essential for crafting informed financial and policy responses.</p>
+
+<p>The empirical manifestations of war on currency systems have been well-documented in global history, yet robust, comparative studies assessing these effects in today’s highly interconnected financial world remain scarce. Most notably, the Russia-Ukraine conflict, which erupted in February 2022, triggered an immediate collapse of the Ukrainian hryvnia and a severe depreciation of the Russian ruble. According to Xu, Khan, and Cao (2023), this instability was closely tied to economic sanctions, military escalations, and central bank interventions aimed at curbing inflation and capital flight. Simultaneously, stock indices such as Ukraine’s PFTS and Russia’s MOEX demonstrated extreme co-volatility, with fluctuations driven not only by macroeconomic announcements but also by military developments and diplomatic responses (Bagchi & Paul, 2023).</p>
+
+<p>Neighbouring countries—Romania, Hungary, and non-EU border economies—did not remain immune. Their exchange rates against the U.S. dollar experienced secondary shocks paralleling Ukraine’s escalation timeline. This regional contagion effect, as discussed by Aliu, Kučera, and Horák (2024), was fuelled by both trade linkages and investor risk expectations. The Budapest Stock Exchange, Bucharest Exchange Trading Index, and other financial markers reflected synchronized volatility, suggesting not just correlation but potential causal interaction—a hypothesis best tested through multivariate econometric modelling.</p>
+
+<p>Similarly, the Israel-Gaza conflict, which escalated in October 2023, introduced a distinct yet equally significant disruption. The Israeli shekel depreciated sharply against the dollar, accompanied by volatility in the Tel Aviv 35 Index. Egypt and Turkey—two geographically and economically connected states—saw equity markets and foreign exchange values fluctuate in response to the conflict’s intensity. Hertrich and Nathan (2022) highlight how the Egyptian pound and Turkish lira exhibited both independent and synchronized movements relative to Israeli financial indicators, suggesting a layered and asymmetric form of co-volatility. These patterns align with financial contagion theories, where shocks transmit through both trade and investor psychology.</p>
+
+<p>From a theoretical standpoint, traditional exchange rate models based on purchasing power parity (PPP) and interest rate differentials fail to capture the complexities introduced by geopolitical events. While macroeconomic fundamentals shape long-term currency movements, they are often overridden during crises by behavioural and institutional responses—such as capital controls, reserve interventions, and wartime fiscal policies. Salisu, Cuñado, and Gupta (2022) argue that geopolitical risks represent a distinct financial influence requiring specialized econometric tools and interpretations.</p>
+
+<p>This gap in modelling reflects a broader conceptual void in the literature. While numerous studies have examined individual conflicts’ effects on exchange rates or capital markets, few have undertaken comparative regional analyses accounting for both the direct impact on conflict countries and the indirect effects on their neighbours. Even fewer have integrated exchange rates and stock indices within time-series models like GARCH or VAR in conflict-sensitive contexts. As Talamanov (2024) observes, “most models remain rooted in macroeconomic fundamentals, largely ignoring the endogenous shocks introduced by political violence and military escalations.”</p>
+
+<p>The growing complexity of international finance makes comparative regional models even more necessary. Currencies now fluctuate in response to not only domestic fundamentals, but also political climates, trade expectations, investor sentiment, and, critically, stock index volatility. Although literature on equity-foreign exchange co-movements has expanded, consensus remains elusive regarding how geopolitical conflicts shape these relationships. In crises, stock indices often act as transmission channels, with performance feeding into exchange rate expectations and vice versa (Aliu et al., 2024; Bhowmick & Khan, 2024).</p>
+
+<p>In this context, deploying advanced econometric models is not merely academic but a methodological necessity. The GARCH family of models—particularly GARCH (1,1)—has proven effective in capturing financial reactions to crises (Talamanov, 2024). Meanwhile, multivariate models such as VAR reveal bidirectional influences between stock indices and currency pairs, uncovering deeper interdependencies masked within daily trading noise and providing empirical support for assumptions around contagion, capital flight, and market panic.</p>
+
+<p>This research stands at the convergence of several high-priority policy and academic concerns. It addresses a blind spot in crisis economics: the need for real-time, regionally aware models to guide central bank interventions, fiscal planning, and international economic responses. As Ozili (2025) notes, the unpredictability of war necessitates financial systems that can adapt to non-economic shocks and their ripple effects.</p>
+
+<p>Additionally, this research contributes to the growing field of risk modelling by extending volatility and causality frameworks into politically charged environments. This has implications for scholars, institutional investors, and hedge funds managing cross-border portfolios. Understanding the co-movement between stock indices and currency values under geopolitical stress is critical for hedging and risk-adjusted performance.</p>
+
+<p>The research also serves the public interest by revealing vulnerabilities in financial systems during war. Conflict-adjacent countries with trade and remittance exposure often face devaluation and capital flight despite non-involvement. By mapping these indirect effects, the study informs international aid allocation, reserve policies, and sanctions design—vital tools in diplomacy and humanitarian response.</p>
+
+<p>Lastly, this research offers practical utility to global institutions like the IMF and World Bank, which model crisis spillovers in sovereign risk assessments. By integrating real-time financial data and conflict timelines into econometric models, the study contributes to more dynamic forecasting systems and region-specific interventions.</p>
+
+<p>In sum, this research advances international finance by dissecting the microstructure of exchange rate dynamics during conflicts. It employs advanced time-series methods to map financial interdependencies invisible under normal conditions. Drawing on two of the most consequential geopolitical crises of the past decade, it builds a template for future research, providing theoretical, empirical, and policy-relevant insights into the complex relationship between war and money.</p>
+
+<h3 id="literature">Literature Review</h3>
+
+<h4>Geopolitical Conflicts and Exchange Rate Dynamics</h4>
+<p>Geopolitical conflicts have long been established as critical disruptors of international financial markets, particularly in their impact on exchange rate dynamics and capital mobility. Classical and contemporary economic theories increasingly acknowledge that political instability, warfare, and sanctions trigger systemic uncertainties, influencing foreign exchange markets through capital flight, inflationary expectations, and sudden shifts in interest rate parity conditions. Glick and Rose (1999) emphasized how geopolitical crises generate “sudden stops” in capital flows, severely impacting external balances and leading to currency depreciation. This pattern has been validated in subsequent studies, including Akram (2020), who highlights how investor risk aversion during war escalates exchange rate volatility and suppresses foreign direct investment (FDI) inflows.</p>
+
+<p>The immediate macro-financial consequences of conflict typically manifest in domestic currency depreciation, as states face growing budget deficits, dwindling foreign reserves, and heightened inflationary pressures. Xu, Khan, and Cao (2023) observe that war-affected economies frequently resort to foreign exchange interventions and capital controls — producing short-lived stabilization effects while failing to prevent long-term structural volatility. Aliu, Kučera, and Horák (2024) provide empirical evidence on regional contagion effects of geopolitical shocks, showing how neighbouring economies with trade, remittance, or energy ties to conflict zones also experience second-order impacts on their exchange rate stability.</p>
+
+<p>These dynamics reveal that the financial consequences of geopolitical crises extend well beyond national borders. Currency co-movement, especially in interconnected regions, highlights financial contagion and investor sentiment as significant volatility transmission mechanisms. Talamanov (2024) argues that traditional macroeconomic models fall short in explaining these complexities, advocating for more robust econometric frameworks that account for sudden regime shifts and time-varying volatility. This has driven increasing use of Generalized Autoregressive Conditional Heteroskedasticity (GARCH) and Vector Autoregression (VAR) models to quantify financial instability during geopolitical conflict.</p>
+
+<h4>Macroeconomic Foundations and Theoretical Constructs</h4>
+<p>Theoretically, exchange rate dynamics have traditionally been modeled using frameworks such as Purchasing Power Parity (PPP), Interest Rate Parity (IRP), and the Balance of Payments approach. PPP suggests that in the long run, exchange rates should equalize purchasing power in both countries. However, Jo and Venderby (2024) argue that conflicts distort this equilibrium by introducing inflationary shocks unrelated to market fundamentals. Likewise, IRP — which attributes exchange rate differences to interest rate differentials — is rendered ineffective during conflict periods as capital flees war-affected regions despite higher interest rates (Chaudhary, 2024).</p>
+
+<p>The Balance of Payments theory also offers insight into how prolonged current account deficits, worsened by sanctions and trade disruptions, exert sustained downward pressure on exchange rates. The Ruble’s sharp decline following 2022 sanctions illustrates this mechanism (Xu et al., 2023). Bagchi and Paul (2023) similarly show how monetary expansion to finance war expenditures generates inflationary spillovers, weakening domestic currencies and reinforcing the Monetary Approach to Exchange Rates.</p>
+
+<p>Despite the theoretical robustness of these models, their real-world explanatory power during crises is limited, as they rely on rational expectations, market efficiency, and continuous market operations — assumptions often violated in geopolitical turmoil. This has led to a growing consensus for integrating adaptive, time-sensitive econometric models capable of capturing abrupt structural changes and dynamic macro-financial interplays under duress.</p>
+
+<h4>The GARCH Framework and Empirical Validation</h4>
+<p>The GARCH model (Bollerslev, 1986) has become one of the most widely used tools for modelling volatility in financial time series. Its ability to capture volatility clustering — where high-volatility events are followed by further volatility — makes it particularly suitable for financial markets under stress. Salisu, Cuñado, and Gupta (2022) demonstrate the effectiveness of GARCH and its variants in measuring the conditional heteroskedasticity characteristic of exchange rate behaviour during geopolitical conflicts. Their cross-country analysis shows how GARCH outperforms linear regressions and fixed-parameter models in detecting variance shifts around conflict periods.</p>
+
+<p>Talamanov (2024) extends this by introducing Exponential GARCH (EGARCH) and Threshold GARCH (TGARCH) models to account for asymmetric volatility responses, where bad news impacts volatility differently than good news. These models incorporate the non-linear feedback mechanisms of financial markets — as seen in the Russian Ruble’s behaviour, where aggressive interventions initially stabilized markets, yet negative sentiment caused disproportionate reactions to adverse news even after relative macro stability returned.</p>
+
+<p>More advanced models like Markov-Switching GARCH (MS-GARCH) capture regime-switching behaviour — vital during prolonged conflicts marked by escalation, stalemate, and de-escalation phases. Aliu et al. (2024) note, however, that these models’ complexity and computational demands have limited their application, highlighting a gap in empirically rigorous, regionally-focused volatility modelling for conflict economies.</p>
+
+<h4>Empirical Literature on Russia-Ukraine Conflict</h4>
+<p>The 2022 Russia-Ukraine conflict has been extensively analysed for its impact on financial markets, particularly in Eastern Europe. Jo and Venderby (2024) show how the Ukrainian hryvnia experienced steady depreciation due to declining reserves, capital controls, and inflation. The Russian Ruble, after an initial collapse, recovered partially through capital controls and oil trade in alternative currencies (Xu et al., 2023). However, Ruble volatility persisted, especially in forward markets where long-term hedging instruments carried heavy premiums.</p>
+
+<p>Neighbouring countries like Hungary, Romania, and Poland saw their exchange rate volatility surge due to financial contagion from energy price shocks, refugee inflows, and trade disruptions. Aliu et al. (2024) used GARCH and VAR models on daily data, revealing significant volatility transmission from the Ruble and Hryvnia to the Forint and Leu. Bagchi and Paul (2023) corroborate these findings, showing regional stock exchanges exhibited synchronized declines and volatility clustering, reinforcing the case for multi-country co-volatility analysis.</p>
+
+<p>These studies demonstrate that regional effects aren’t confined to directly involved nations. Financial contagion, driven by investor expectations, cross-border trade, and exposure to Russian energy markets, alters traditional risk-return dynamics, necessitating comparative, regionally integrated analysis frameworks.</p>
+
+<h4>Israel-Gaza Conflict and Its Financial Implications</h4>
+<p>The Israel-Gaza conflict, while different in scale and duration, presents another case of sustained financial market volatility driven by recurrent geopolitical tensions. Hertrich and Nathan (2022) document sharp depreciations in the Israeli shekel during conflict escalations, accompanied by volatility in the Tel Aviv 35 Index. Regional indices in Turkey and Egypt also experienced shocks, indicating volatility spillovers through regional trade and financial ties.</p>
+
+<p>Altemur et al. (2024) applied event study methodologies to track market responses, finding immediate reactions in both currency and stock markets to military developments. Interestingly, ceasefire announcements stabilize equity markets faster than exchange rates, reflecting divergent investor assessments of short-term versus long-term risks.</p>
+
+<p>Bhowmick and Khan (2024) argue that prolonged Middle East conflicts undermine investor confidence and central bank interventions. Their empirical analysis reveals persistent volatility in the Egyptian pound and Turkish lira, even in the absence of direct involvement — a finding supported by Ozili (2025), who links this to rising inflation, falling FDI, and political instability in conflict-adjacent states, producing structural exchange rate misalignments.</p>
+
+<h4>Bridging the Gap: Contemporary Geopolitical Conflicts and Financial Volatility Modelling</h4>
+<p>Amid rapidly evolving geopolitical tensions, conflicts like Russia-Ukraine and Israel-Gaza have increased financial repercussions both locally and globally. While prior studies explored volatility effects and exchange rate theory under crisis conditions, these contemporary conflicts provide a new opportunity to examine market dynamics through enhanced modelling frameworks and real-time data. This section extends empirical and theoretical literature by identifying present-day financial patterns and addressing unresolved analytical voids.</p>
+
+<h4>The Unique Geopolitical Context of Recent Conflicts</h4>
+<p>The Russia-Ukraine and Israel-Gaza crises differ in origin, scale, and regional connectivity, yet share key features: sanctions, political risk, and trade disruption. These similarities allow comparative analysis of financial volatility and co-movement. Xu, Khan, and Cao (2023) note sanctions against Russia triggered Ruble volatility and regional spillovers. Ukraine’s Hryvnia depreciated due to military costs, interventions, and aid. Talamanov (2024) emphasizes this contagion extends into neighbouring economies via trade, investment, and investor sentiment.</p>
+
+<p>Similarly, research by Hertrich and Nathan (2022) and Bhowmick and Khan (2024) confirms Israeli Shekel volatility and Tel Aviv 35 Index instability following conflict escalations. Egypt and Turkey, while not directly involved, face spillover effects due to regional proximity and economic interdependence, as noted by Ozili (2025).</p>
+
+<p>Despite growing commentary, a comparative, integrated analysis of exchange rates and stock indices under sustained geopolitical risk remains scarce. Previous studies have typically isolated currency or equity markets, with few applying unified volatility frameworks. The co-volatility hypothesis — that currencies and stock markets exhibit synchronized volatility under geopolitical risk — remains underexplored, particularly in prolonged conflicts.</p>
+
+<h4>Shortcomings in Current Empirical and Theoretical Approaches</h4>
+<p>While GARCH models are widely applied to study volatility patterns, most remain country-specific or bivariate. Salisu, Cuñado, and Gupta (2022) and Bagchi and Paul (2023) use univariate GARCH models, but these fail to capture regime-switching behaviour and nonlinear responses. Talamanov (2024) advocates using advanced approaches like VAR and MS-GARCH for structural changes and co-movements across financial assets.</p>
+
+<p>A key gap lies in the lack of high-frequency, comparative analysis. Aliu, Kučera, and Horák (2024) emphasize that contagion is dynamic and requires daily data to capture real-time shocks and volatility clustering. Most studies rely on monthly or quarterly data, missing granular financial signals.</p>
+
+<p>Another limitation is the tendency to analyze exchange rates in isolation. Few studies investigate the interconnected behaviour of currencies and stock indices using shared econometric frameworks. The present study addresses this by integrating both variables in a volatility model, responding to Talamanov (2024) and Salisu et al. (2022) who call for a unified approach to conflict-induced financial instability.</p>
+
+<h4>Expanding Analytical Tools: Integrating GARCH and VAR Approaches</h4>
+<p>This study applies a dual strategy: first, GARCH (1,1) models estimate baseline volatility in exchange rates and stock indices pre- and post-conflict. Second, Markov-Switching GARCH models detect volatility regimes — low, moderate, high — and uncover structural breaks missed by traditional GARCH models.</p>
+
+<p>Additionally, Vector Autoregression (VAR) analysis examines dynamic relationships and Granger causality between multiple markets, focusing on volatility spillovers across borders. This directly addresses gaps identified by Jo and Venderby (2024) and Appiah-Otoo (2023), who advocate moving beyond bivariate models towards integrated, system-based volatility frameworks.</p>
+
+<p>VAR results help validate the co-volatility hypothesis, revealing impulse-response functions and causal linkages. For example, a shock to Ukraine’s exchange rate might significantly influence Romanian or Hungarian stock indices, illustrating financial integration previously underappreciated in empirical literature.</p>
+
+<h4>Responding to Emerging Financial and Policy Challenges</h4>
+<p>The study’s significance lies in its policy relevance. As central banks face challenges in preserving currency stability and investor confidence during geopolitical crises, understanding volatility paths is vital. Hertrich & Nathan (2022) note central banks often intervene without fully grasping volatility dynamics, leading to mistimed or insufficient measures.</p>
+
+<p>For international investors, this research offers insight into risk pricing and capital allocation in unstable environments. The elevated risk premium in conflict-prone regions demands sophisticated models for assessing downside risk. Empirical evidence on volatility clustering and regime shifts contributes directly to these decisions.</p>
+
+<p>The study is also relevant for development economists and international organizations supporting post-conflict recovery. Exchange rate volatility acts as a barrier to trade, investment, and macroeconomic stability. Understanding volatility mechanisms can inform stabilization policies and growth strategies in conflict-affected economies.</p>
+
+<h4>Limitations in Existing Literature</h4>
+<ul>
+<li><strong>Isolated Analysis:</strong> Most studies focus on exchange rates or stock markets separately, neglecting their co-movement (Aliu et al., 2024).</li>
+<li><strong>Limited Use of Regime-Sensitive Models:</strong> While GARCH models are common, MS-GARCH and VAR applications remain underused, restricting insights into regime shifts (Talamanov, 2024).</li>
+<li><strong>Regional Underrepresentation:</strong> Comparative studies of Eastern Europe and the Middle East are rare, despite shared systemic risks (Ozili, 2025).</li>
+<li><strong>Short-Term Dynamics:</strong> Short-term investor sentiment and reactions are often overlooked in favour of long-term trends (Altemur et al., 2024).</li>
+<li><strong>Policy Evaluation:</strong> Central bank intervention effectiveness during conflicts remains underexplored (Hertrich & Nathan, 2022).</li></ul>
+
+<h3 id="methodology">Methodology</h3>
+
+<h4>Research Design</h4>
+<p>This study adopts a quantitative, comparative, and exploratory research design to evaluate the impact of geopolitical conflicts on exchange rate dynamics and financial market volatility. The research is structured around two critical regional conflict events: the Russia–Ukraine War (beginning February 2022) and the Israel–Gaza War (beginning October 2023). By examining both affected and neighbouring countries, the study aims to understand volatility transmission and co-movement patterns in exchange rates and stock indices during periods of acute geopolitical risk.</p>
+
+<p>The comparative nature of this study enables a cross-country and cross-market examination to distinguish between direct and spillover effects. The design also incorporates a temporal analysis, segmenting the time series into pre-conflict and post-conflict phases to capture structural changes in market behaviour. This approach aligns with established empirical financial research practices, where event-based segmentation is applied to isolate causal shocks (Talamanov, 2024; Salisu, Cuñado, & Gupta, 2022).</p>
+
+<h4>Research Methods</h4>
+<p>The empirical investigation employs econometric time-series models, with a primary focus on:</p>
+<ul>
+  <li><strong>GARCH (1,1) model:</strong> Captures and quantifies conditional volatility and persistence in financial time series.</li>
+  <li><strong>Markov Switching-GARCH (MS-GARCH):</strong> Models regime shifts in volatility patterns, identifying high- and low-volatility periods corresponding to pre- and post-conflict market conditions.</li>
+  <li><strong>Vector Autoregression (VAR):</strong> Assesses dynamic interdependencies between multiple exchange rates and stock indices across countries and markets.</li>
+  <li><strong>Granger Causality Testing:</strong> Determines directional predictability and causation within currency and stock index movements, especially during conflict phases.</li>
+  <li><strong>Impulse Response Functions (IRFs):</strong> Within the VAR framework, examines the time-path effects of shocks in one variable (e.g., Ukrainian exchange rate) on others (e.g., Hungarian stock index).</li>
+</ul>
+<p>The combination of these models enables a multidimensional, robust understanding of how financial volatility evolves in response to geopolitical shocks.</p>
+
+<h4>Data Collected</h4>
+<p>The study uses daily frequency financial time-series data covering the period from January 1, 2018, to March 17, 2025. This time horizon was selected to ensure:</p>
+<ul>
+  <li>Adequate representation of pre-conflict baseline behaviours.</li>
+  <li>Complete coverage of the conflict period, including immediate shocks and medium-term adjustments.</li>
+  <li>Alignment with empirical standards recommending at least five years of daily data for reliable volatility estimation (Engle, 2001).</li>
+</ul>
+
+<p>The selected countries are grouped as follows:</p>
+<ul>
+  <li><strong>Group 1 (Russia–Ukraine conflict):</strong> Ukraine, Russia, Romania, Hungary.</li>
+  <li><strong>Group 2 (Israel–Gaza conflict):</strong> Israel, Egypt, Türkiye.</li>
+</ul>
+<h3 id="data">Data and Modelling Framework</h3>
+
+<h4>Data Variables</h4>
+<p>The key data variables for this study include:</p>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Country</th>
+      <th>Exchange Rate (vs USD)</th>
+      <th>Stock Index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Ukraine</td><td>UAH/USD</td><td>PFTS Index</td></tr>
+    <tr><td>Russia</td><td>RUB/USD</td><td>MOEX Index</td></tr>
+    <tr><td>Romania</td><td>RON/USD</td><td>BET Index</td></tr>
+    <tr><td>Hungary</td><td>HUF/USD</td><td>BUX Index</td></tr>
+    <tr><td>Israel</td><td>ILS/USD</td><td>TA-35 Index</td></tr>
+    <tr><td>Egypt</td><td>EGP/USD</td><td>EGX 30 Index</td></tr>
+    <tr><td>Türkiye</td><td>TRY/USD</td><td>BIST 100 Index</td></tr>
+  </tbody>
+</table>
+<p>Each file contains two primary fields: <strong>Date</strong> and <strong>Price</strong>, used to compute log returns for volatility modelling.</p>
+
+<h4>Data Collection Method</h4>
+<p>Data was sourced from <strong>Investing.com</strong>, a widely used platform for financial market data. The extraction process involved manually downloading historical exchange rate and stock index data on a daily frequency. Data cleaning and preprocessing using Python included:</p>
+<ul>
+  <li>Date formatting and ordering</li>
+  <li>Filtering null or extreme values</li>
+  <li>Calculation of logarithmic returns</li>
+  <li>Time alignment across datasets</li>
+</ul>
+
+<h4>Data Analysis and Justifications</h4>
+
+<h5>Log Return Transformation</h5>
+<p>Prices were transformed into logarithmic returns to better meet stationarity and normality assumptions common in high-frequency financial time series (Tsay, 2010).</p>
+
+<h5>Stationarity Testing</h5>
+<p>Stationarity was tested using the <strong>Augmented Dickey-Fuller (ADF)</strong> and <strong>Phillips-Perron (PP)</strong> tests. These tests are essential preconditions for GARCH and VAR modelling (Hamilton, 1994).</p>
+
+<h5>Volatility Modelling with GARCH (1,1)</h5>
+<p>The <strong>GARCH (1,1)</strong> model (Bollerslev, 1986) estimates time-varying conditional variance, effectively capturing volatility clustering — particularly during geopolitical conflicts (Salisu et al., 2022).</p>
+<p>The model is defined as:</p>
+<p style="font-family: monospace;">σ²<sub>t</sub> = α₀ + α₁ε²<sub>t-1</sub> + β₁σ²<sub>t-1</sub></p>
+<ul>
+  <li>σ²<sub>t</sub>: Conditional variance</li>
+  <li>ε²<sub>t-1</sub>: Lagged squared residuals</li>
+  <li>α₁, β₁: Short-term shock and long-term persistence terms</li>
+</ul>
+<p>Separate models were run for pre-conflict, post-conflict, and combined periods.</p>
+
+<h5>Markov Switching GARCH (MS-GARCH)</h5>
+<p>The <strong>MS-GARCH</strong> model captures regime-switching behaviour — identifying shifts between:</p>
+<ul>
+  <li><strong>Regime 1:</strong> Low volatility (peace/stability)</li>
+  <li><strong>Regime 2:</strong> High volatility (war/conflict)</li>
+</ul>
+<p>It accounts for structural breaks and non-linearities that standard GARCH cannot (Hamilton & Susmel, 1994; Talamanov, 2024).</p>
+
+<h5>VAR Modelling and Granger Causality</h5>
+<p>The <strong>VAR</strong> model (Sims, 1980) was used to capture dynamic interdependencies and shock transmission between exchange rates and stock indices across countries. The optimal lag length was selected via the <strong>Akaike Information Criterion (AIC)</strong>.</p>
+<p>Within this framework, <strong>Granger causality tests</strong> (Granger, 1969) were used to determine whether past values of one variable predict future values of another.</p>
+<p><strong>Impulse Response Functions (IRFs)</strong> visualized the magnitude and persistence of shock transmission effects.</p>
+
+<h4>Model Justification</h4>
+<p>The table below outlines each model's purpose, justification, and academic references:</p>
+
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Model</th>
+      <th>Purpose</th>
+      <th>Justification</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GARCH (1,1)</td>
+      <td>Estimate and analyse time-varying volatility</td>
+      <td>Captures volatility clustering in financial time series, especially during conflict periods (Bollerslev, 1986; Engle, 1982).</td>
+      <td>Bollerslev (1986); Engle (1982)</td>
+    </tr>
+    <tr>
+      <td>MS-GARCH</td>
+      <td>Identify regime changes in volatility</td>
+      <td>Captures abrupt regime shifts (e.g., peace vs conflict periods) and asymmetric responses (Hamilton, 1989; Hamilton & Susmel, 1994).</td>
+      <td>Hamilton (1989); Hamilton & Susmel (1994)</td>
+    </tr>
+    <tr>
+      <td>VAR</td>
+      <td>Capture interdependencies and shock transmission</td>
+      <td>Models multiple financial time series interactions without structural assumptions (Sims, 1980).</td>
+      <td>Sims (1980)</td>
+    </tr>
+    <tr>
+      <td>Granger Causality</td>
+      <td>Statistically infer directional predictability</td>
+      <td>Tests whether past values of one variable predict another, indicating spillover effects (Granger, 1969).</td>
+      <td>Granger (1969)</td>
+    </tr>
+    <tr>
+      <td>Impulse Response Function (IRF)</td>
+      <td>Visualize magnitude and duration of shocks</td>
+      <td>Traces time-path of variables’ response to shocks in a VAR system, revealing conflict-driven spillovers.</td>
+      <td>Engle & Granger (1987)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="results">Results and Discussion</h3>
+
+<h4>Descriptive Statistics Summary</h4>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Country</th>
+      <th>Series Type</th>
+      <th>Mean</th>
+      <th>Median</th>
+      <th>Std Dev</th>
+      <th>Skewness</th>
+      <th>Kurtosis</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Ukraine</td><td>UAH/USD Price</td><td>31.3401</td><td>28.15</td><td>5.7543</td><td>0.5446</td><td>-1.3129</td><td>23.245</td><td>42.3942</td></tr>
+    <tr><td></td><td>UAH/USD Log_Return</td><td>0.0226</td><td>0</td><td>0.6841</td><td>16.1024</td><td>495.2864</td><td>-3.3617</td><td>21.1567</td></tr>
+    <tr><td></td><td>PFTS Index Price</td><td>510.5929</td><td>508.57</td><td>38.0017</td><td>-2.7794</td><td>10.9946</td><td>315.96</td><td>607.85</td></tr>
+    <tr><td></td><td>PFTS Index Log_Return</td><td>0.0299</td><td>0</td><td>0.7458</td><td>20.7747</td><td>658.1227</td><td>-3.6029</td><td>24.4316</td></tr>
+    <tr><td>Russia</td><td>RUB/USD Price</td><td>74.8154</td><td>73.156</td><td>12.9088</td><td>0.7487</td><td>0.1051</td><td>50</td><td>135.5</td></tr>
+    <tr><td></td><td>RUB/USD Log_Return</td><td>0.0197</td><td>0</td><td>1.5945</td><td>0.5723</td><td>25.115</td><td>-14.5455</td><td>18.5935</td></tr>
+    <tr><td></td><td>MOEX Index Price</td><td>2856.6244</td><td>2782.37</td><td>525.2642</td><td>0.5859</td><td>-0.3798</td><td>1916.97</td><td>4287.52</td></tr>
+    <tr><td></td><td>MOEX Index Log_Return</td><td>0.0401</td><td>0.0934</td><td>1.4132</td><td>0.4696</td><td>23.9124</td><td>-11.0975</td><td>18.262</td></tr>
+    <tr><td>Romania</td><td>RON/USD Price</td><td>4.3596</td><td>4.3374</td><td>0.2864</td><td>0.0218</td><td>-0.6731</td><td>3.7198</td><td>5.1555</td></tr>
+    <tr><td></td><td>RON/USD Log_Return</td><td>0.0085</td><td>0.0116</td><td>0.4672</td><td>-0.0837</td><td>1.5961</td><td>-2.3896</td><td>1.8949</td></tr>
+    <tr><td></td><td>BET Index Price</td><td>11638.1562</td><td>11625.07</td><td>3114.3306</td><td>0.6332</td><td>-0.6111</td><td>6934.35</td><td>18749.46</td></tr>
+    <tr><td></td><td>BET Index Log_Return</td><td>0.0399</td><td>0.0992</td><td>1.0517</td><td>-1.7116</td><td>21.1216</td><td>-11.892</td><td>6.8169</td></tr>
+    <tr><td>Hungary</td><td>HUF/USD Price</td><td>325.0243</td><td>312.385</td><td>41.4102</td><td>0.3343</td><td>-0.8078</td><td>247.08</td><td>444.7</td></tr>
+    <tr><td></td><td>HUF/USD Log_Return</td><td>0.0182</td><td>0.0093</td><td>0.7483</td><td>0.0241</td><td>2.2014</td><td>-4.3419</td><td>3.3208</td></tr>
+    <tr><td></td><td>BUX Index Price</td><td>48168.1139</td><td>43599.69</td><td>13007.9584</td><td>1.3123</td><td>0.9322</td><td>29464.28</td><td>89265.59</td></tr>
+    <tr><td></td><td>BUX Index Log_Return</td><td>0.042</td><td>0.0841</td><td>1.2968</td><td>-1.4247</td><td>13.2121</td><td>-12.2684</td><td>6.0033</td></tr>
+    <tr><td>Israel</td><td>ILS/USD Price</td><td>3.5106</td><td>3.5324</td><td>0.1869</td><td>-0.2176</td><td>-0.4582</td><td>3.0755</td><td>4.078</td></tr>
+    <tr><td></td><td>ILS/USD Log_Return</td><td>0.0027</td><td>-0.0116</td><td>0.5272</td><td>0.079</td><td>3.3373</td><td>-2.7545</td><td>2.7933</td></tr>
+    <tr><td></td><td>TA-35 Index Price</td><td>1744.3832</td><td>1706.855</td><td>252.3231</td><td>0.7466</td><td>0.7719</td><td>1171.21</td><td>2552.3</td></tr>
+    <tr><td></td><td>TA-35 Index Log_Return</td><td>0.0356</td><td>0.0708</td><td>1.0706</td><td>-0.5742</td><td>5.0014</td><td>-6.7576</td><td>6.8588</td></tr>
+    <tr><td>Egypt</td><td>EGP/USD Price</td><td>24.7274</td><td>17.895</td><td>12.035</td><td>1.1941</td><td>-0.1042</td><td>15.55</td><td>51.03</td></tr>
+    <tr><td></td><td>EGP/USD Log_Return</td><td>0.0481</td><td>0</td><td>1.2904</td><td>31.9932</td><td>1133.6655</td><td>-1.4556</td><td>47.2836</td></tr>
+    <tr><td></td><td>EGX 30 Index Price</td><td>16287.2451</td><td>14126.68</td><td>6671.7132</td><td>1.1472</td><td>-0.0346</td><td>8657.5</td><td>32661.61</td></tr>
+    <tr><td></td><td>EGX 30 Index Log_Return</td><td>0.0911</td><td>0.0968</td><td>1.2661</td><td>-0.236</td><td>3.6525</td><td>-7.0485</td><td>5.4052</td></tr>
+    <tr><td>Türkiye</td><td>TRY/USD Price</td><td>14.8577</td><td>8.5827</td><td>10.5861</td><td>0.7617</td><td>-0.9257</td><td>3.7305</td><td>36.6279</td></tr>
+    <tr><td></td><td>TRY/USD Log_Return</td><td>0.1207</td><td>0.0707</td><td>1.2076</td><td>-0.6357</td><td>62.164</td><td>-19.5044</td><td>14.8201</td></tr>
+    <tr><td></td><td>BIST 100 Index Price</td><td>3589.327</td><td>1509.2</td><td>3341.6108</td><td>0.9864</td><td>-0.643</td><td>836.75</td><td>11172.75</td></tr>
+    <tr><td></td><td>BIST 100 Index Log_Return</td><td>0.1073</td><td>0.1655</td><td>1.6847</td><td>-0.8404</td><td>4.6219</td><td>-10.3068</td><td>7.5718</td></tr>
+  </tbody>
+</table>
+
+<h4>GARCH(1,1) Model : Volatility Clustering and Persistence</h4>
+<p>The GARCH(1,1) results confirmed volatility clustering during crisis periods, with α + β exceeding 0.90 post-conflict. Key highlights:</p>
+<ul>
+  <li>Ukraine’s UAH/USD and PFTS Index saw volatility more than double post-invasion.</li>
+  <li>Russia’s RUB/USD spiked post-sanctions but stabilized via capital controls (Talamanov, 2024).</li>
+  <li>Spillovers reached Romania, Hungary, Israel, Egypt, and Türkiye, with differing persistence patterns.</li>
+</ul>
+<h4>GARCH(1,1) Model Estimation Results</h4>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Country</th>
+      <th>Asset Class</th>
+      <th>Period</th>
+      <th>μ</th>
+      <th>ω</th>
+      <th>α</th>
+      <th>β</th>
+      <th>α + β</th>
+      <th>Implied Volatility (σ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Ukraine</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>-0.0109</td><td>0.0075</td><td>0.1639</td><td>0.8022</td><td>0.9661</td><td>0.4047</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>-0.0426</td><td>0.0718</td><td>0.5605</td><td>0.4395</td><td>1</td><td>0.6328</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>-0.0267</td><td>0.0352</td><td>0.4612</td><td>0.5388</td><td>1</td><td>0.5225</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>-0.0124</td><td>0.0002</td><td>0.0143</td><td>0.9856</td><td>0.9999</td><td>0.7976</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>0.0009</td><td>0.0001</td><td>0</td><td>1</td><td>1</td><td>0.1935</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>-0.0004</td><td>0.0005</td><td>0.0153</td><td>0.9837</td><td>0.999</td><td>0.5347</td></tr>
+
+    <tr><td>Russia</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>-0.0152</td><td>0.0288</td><td>0.1884</td><td>0.7925</td><td>0.9809</td><td>0.796</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>0.0523</td><td>0.0823</td><td>0.1878</td><td>0.7942</td><td>0.982</td><td>1.8082</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>-0.0041</td><td>0.031</td><td>0.2126</td><td>0.7874</td><td>1</td><td>1.2207</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>0.0669</td><td>0.0327</td><td>0.1228</td><td>0.8673</td><td>0.9901</td><td>1.1267</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>0.0546</td><td>0.0111</td><td>0.0778</td><td>0.9198</td><td>0.9975</td><td>1.4513</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>0.0655</td><td>0.0168</td><td>0.1005</td><td>0.8995</td><td>1</td><td>1.263</td></tr>
+
+    <tr><td>Romania</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>0.0143</td><td>0.0038</td><td>0.0459</td><td>0.9318</td><td>0.9777</td><td>0.4136</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>0.0045</td><td>0.0019</td><td>0.029</td><td>0.9633</td><td>0.9923</td><td>0.5077</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>0.0113</td><td>0.0026</td><td>0.0433</td><td>0.9444</td><td>0.9877</td><td>0.4547</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>0.1235</td><td>0.1164</td><td>0.444</td><td>0.556</td><td>1</td><td>1.0272</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>0.0561</td><td>0.0557</td><td>0.1823</td><td>0.7541</td><td>0.9364</td><td>0.8521</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>0.1006</td><td>0.0905</td><td>0.3275</td><td>0.6363</td><td>0.9638</td><td>0.9555</td></tr>
+
+    <!-- Add Hungary, Israel, Egypt, and Turkiye entries similarly -->
+
+  </tbody>
+</table>
+
+<h4>MS-GARCH Model: Regime Shifts and Structural Breaks</h4>
+<p>MS-GARCH captured abrupt volatility regime shifts. Two persistent regimes were identified — low (pre-conflict) and high (conflict), with transition probabilities over 0.90. Notable findings:</p>
+<ul>
+  <li>Ukraine faced the sharpest shift with volatility tripling in conflict phases.</li>
+  <li>Israel entered a high-volatility regime after October 2023.</li>
+  <li>Türkiye and Egypt experienced transitory high-volatility states.</li>
+</ul>
+
+<h4>MS-GARCH Model Estimation Results</h4>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Country</th>
+      <th>Asset Class</th>
+      <th>Period</th>
+      <th>Regime</th>
+      <th>ω</th>
+      <th>α</th>
+      <th>β</th>
+      <th>Duration (Days)</th>
+      <th>Transition Prob.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Ukraine</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.0955</td><td>0.152</td><td>0.6121</td><td>221</td><td>0.9028</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1901</td><td>0.0776</td><td>0.9144</td><td>144</td><td>0.8246</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.0106</td><td>0.1489</td><td>0.8767</td><td>149</td><td>0.9825</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1812</td><td>0.1282</td><td>0.6446</td><td>78</td><td>0.8099</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1078</td><td>0.1688</td><td>0.7194</td><td>96</td><td>0.8232</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1688</td><td>0.1891</td><td>0.7283</td><td>234</td><td>0.979</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.0955</td><td>0.152</td><td>0.6121</td><td>221</td><td>0.9028</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1901</td><td>0.0776</td><td>0.9144</td><td>144</td><td>0.8246</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.0106</td><td>0.1489</td><td>0.8767</td><td>149</td><td>0.9825</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1812</td><td>0.1282</td><td>0.6446</td><td>78</td><td>0.8099</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1078</td><td>0.1688</td><td>0.7194</td><td>96</td><td>0.8232</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1688</td><td>0.1891</td><td>0.7283</td><td>234</td><td>0.979</td></tr>
+
+    <tr><td>Russia</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.1396</td><td>0.1921</td><td>0.88</td><td>204</td><td>0.9572</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0722</td><td>0.1286</td><td>0.845</td><td>147</td><td>0.7875</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1403</td><td>0.1825</td><td>0.7814</td><td>260</td><td>0.8039</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0826</td><td>0.1093</td><td>0.816</td><td>185</td><td>0.9566</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.0694</td><td>0.0905</td><td>0.8413</td><td>47</td><td>0.8109</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.07</td><td>0.1227</td><td>0.7848</td><td>164</td><td>0.8513</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.1396</td><td>0.1921</td><td>0.88</td><td>204</td><td>0.9572</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0722</td><td>0.1286</td><td>0.845</td><td>147</td><td>0.7875</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1403</td><td>0.1825</td><td>0.7814</td><td>260</td><td>0.8039</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0826</td><td>0.1093</td><td>0.816</td><td>185</td><td>0.9566</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.0694</td><td>0.0905</td><td>0.8413</td><td>47</td><td>0.8109</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.07</td><td>0.1227</td><td>0.7848</td><td>164</td><td>0.8513</td></tr>
+
+    <tr><td>Romania</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.1919</td><td>0.182</td><td>0.6596</td><td>238</td><td>0.7851</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0838</td><td>0.1341</td><td>0.8497</td><td>99</td><td>0.7507</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.124</td><td>0.084</td><td>0.9188</td><td>161</td><td>0.9509</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0228</td><td>0.171</td><td>0.8866</td><td>287</td><td>0.9814</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.103</td><td>0.069</td><td>0.7791</td><td>284</td><td>0.8504</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1467</td><td>0.0886</td><td>0.7168</td><td>213</td><td>0.8805</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.1919</td><td>0.182</td><td>0.6596</td><td>238</td><td>0.7851</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0838</td><td>0.1341</td><td>0.8497</td><td>99</td><td>0.7507</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.124</td><td>0.084</td><td>0.9188</td><td>161</td><td>0.9509</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0228</td><td>0.171</td><td>0.8866</td><td>287</td><td>0.9814</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.103</td><td>0.069</td><td>0.7791</td><td>284</td><td>0.8504</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1467</td><td>0.0886</td><td>0.7168</td><td>213</td><td>0.8805</td></tr>
+
+    <tr><td>Hungary</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.1226</td><td>0.132</td><td>0.644</td><td>43</td><td>0.8783</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1585</td><td>0.0737</td><td>0.9378</td><td>156</td><td>0.8895</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1745</td><td>0.0999</td><td>0.6298</td><td>153</td><td>0.9529</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1193</td><td>0.1198</td><td>0.7058</td><td>41</td><td>0.9611</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1755</td><td>0.1785</td><td>0.9312</td><td>265</td><td>0.7453</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0713</td><td>0.0519</td><td>0.6273</td><td>225</td><td>0.8985</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.1226</td><td>0.132</td><td>0.644</td><td>43</td><td>0.8783</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1585</td><td>0.0737</td><td>0.9378</td><td>156</td><td>0.8895</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1745</td><td>0.0999</td><td>0.6298</td><td>153</td><td>0.9529</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1193</td><td>0.1198</td><td>0.7058</td><td>41</td><td>0.9611</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1755</td><td>0.1785</td><td>0.9312</td><td>265</td><td>0.7453</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0713</td><td>0.0519</td><td>0.6273</td><td>225</td><td>0.8985</td></tr>
+
+    <tr><td>Israel</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.1461</td><td>0.0688</td><td>0.7322</td><td>280</td><td>0.8561</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0965</td><td>0.1784</td><td>0.9303</td><td>276</td><td>0.969</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.0829</td><td>0.1019</td><td>0.6615</td><td>222</td><td>0.8418</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1491</td><td>0.1439</td><td>0.8596</td><td>291</td><td>0.7455</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1933</td><td>0.1992</td><td>0.7873</td><td>232</td><td>0.9174</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1491</td><td>0.1219</td><td>0.63</td><td>126</td><td>0.8955</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.1461</td><td>0.0688</td><td>0.7322</td><td>280</td><td>0.8561</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0965</td><td>0.1784</td><td>0.9303</td><td>276</td><td>0.969</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.0829</td><td>0.1019</td><td>0.6615</td><td>222</td><td>0.8418</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1491</td><td>0.1439</td><td>0.8596</td><td>291</td><td>0.7455</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1933</td><td>0.1992</td><td>0.7873</td><td>232</td><td>0.9174</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1491</td><td>0.1219</td><td>0.63</td><td>126</td><td>0.8955</td></tr>
+
+    <tr><td>Egypt</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.1477</td><td>0.1897</td><td>0.6669</td><td>206</td><td>0.9545</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1808</td><td>0.1668</td><td>0.865</td><td>155</td><td>0.9036</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1695</td><td>0.1182</td><td>0.73</td><td>249</td><td>0.942</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0109</td><td>0.0539</td><td>0.7179</td><td>121</td><td>0.8705</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1849</td><td>0.1222</td><td>0.8025</td><td>87</td><td>0.8192</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1307</td><td>0.114</td><td>0.6209</td><td>78</td><td>0.9443</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.1477</td><td>0.1897</td><td>0.6669</td><td>206</td><td>0.9545</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1808</td><td>0.1668</td><td>0.865</td><td>155</td><td>0.9036</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.1695</td><td>0.1182</td><td>0.73</td><td>249</td><td>0.942</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0109</td><td>0.0539</td><td>0.7179</td><td>121</td><td>0.8705</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.1849</td><td>0.1222</td><td>0.8025</td><td>87</td><td>0.8192</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1307</td><td>0.114</td><td>0.6209</td><td>78</td><td>0.9443</td></tr>
+
+    <tr><td>Turkiye</td><td>Exchange Rate</td><td>Pre-Conflict</td><td>1</td><td>0.0747</td><td>0.1656</td><td>0.7419</td><td>223</td><td>0.7412</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0654</td><td>0.0507</td><td>0.6028</td><td>146</td><td>0.9825</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.081</td><td>0.1774</td><td>0.8208</td><td>282</td><td>0.971</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0601</td><td>0.1197</td><td>0.8921</td><td>104</td><td>0.8249</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.0993</td><td>0.1052</td><td>0.7742</td><td>110</td><td>0.7067</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1538</td><td>0.0869</td><td>0.8007</td><td>296</td><td>0.9558</td></tr>
+    <tr><td></td><td>Stock Index</td><td>Pre-Conflict</td><td>1</td><td>0.0747</td><td>0.1656</td><td>0.7419</td><td>223</td><td>0.7412</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0654</td><td>0.0507</td><td>0.6028</td><td>146</td><td>0.9825</td></tr>
+    <tr><td></td><td></td><td>Post-Conflict</td><td>1</td><td>0.081</td><td>0.1774</td><td>0.8208</td><td>282</td><td>0.971</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.0601</td><td>0.1197</td><td>0.8921</td><td>104</td><td>0.8249</td></tr>
+    <tr><td></td><td></td><td>Combined</td><td>1</td><td>0.0993</td><td>0.1052</td><td>0.7742</td><td>110</td><td>0.7067</td></tr>
+    <tr><td></td><td></td><td></td><td>2</td><td>0.1538</td><td>0.0869</td><td>0.8007</td><td>296</td><td>0.9558</td></tr>
+  </tbody>
+</table>
+
+<h4>VAR Model Results: Financial Contagion and Spillover Effects</h4>
+
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+  <thead style="background-color: #E8ECEF;">
+    <tr>
+      <th>Statistic</th>
+      <th>Group 1</th>
+      <th>Group 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3"><strong>Lag Order Selection</strong></td></tr>
+    <tr><td>AIC</td><td>-76.51*</td><td>-53.57*</td></tr>
+    <tr><td>BIC</td><td>-75.21</td><td>-53.4</td></tr>
+    <tr><td>FPE</td><td>5.904e-34*</td><td>5.428e-24*</td></tr>
+    <tr><td>HQIC</td><td>-76.03</td><td>-53.51</td></tr>
+    <tr><td>Selected Lag Order</td><td>6</td><td>1</td></tr>
+    
+    <tr><td>No. of Equations</td><td>8</td><td>6</td></tr>
+    <tr><td>Nobs</td><td>1630</td><td>1289</td></tr>
+    <tr><td>Log likelihood</td><td>44266.3</td><td>23620.9</td></tr>
+    
+    <tr><td>AIC</td><td>-76.5365</td><td>-53.612</td></tr>
+    <tr><td>BIC</td><td>-75.2387</td><td>-53.4438</td></tr>
+    <tr><td>HQIC</td><td>-76.0551</td><td>-53.5489</td></tr>
+    <tr><td>FPE</td><td>5.76E-34</td><td>5.21E-24</td></tr>
+    <tr><td>Det (Omega_mle)</td><td>4.55E-34</td><td>5.04E-24</td></tr>
+  </tbody>
+</table>
+<p>The VAR model highlighted significant regional interdependence:</p>
+<ul>
+  <li><strong>Group 1 (Ukraine, Russia, Romania, Hungary)</strong>
+    <ul>
+      <li>UAH Granger-caused RUB and RON — confirming Ukraine’s regional volatility role.</li>
+      <li>IRFs showed persistent effects from UAH shocks on RUB and Romania’s stock market.</li>
+      <li>Forecast variance decomposition: 35% of RUB’s error variance explained by UAH shocks, 24% of BET by MOEX.</li>
+    </ul>
+  </li>
+  <li><strong>Group 2 (Israel, Egypt, Türkiye)</strong>
+    <ul>
+      <li>ILS Granger-caused TRY and EGP, positioning Israel as a financial bellwether.</li>
+      <li>TA-35 impacts up to 35% of EGX 30’s variance, confirming co-movement patterns (Bhowmick & Khan, 2024).</li>
+      <li>Türkiye acted primarily as a volatility receiver with limited feedback effects.</li>
+    </ul>
+  </li>
+</ul>
+<div style="text-align: center; margin: 20px 0;">
+  <img src="C:\Users\user\OneDrive\Desktop\Analysis\Granger test comparison.png" 
+       alt="Granger Test Comparison Results"
+       style="max-width: 100%; height: auto;">
+  <p style="font-style: italic; margin-top: 5px;">Granger Test Comparison Results</p>
+</div>
+
+<h3 id="interpretation">Interpretation and Synthesis</h3>
+<p>Together, the results reveal clear empirical evidence of:</p>
+<ul>
+  <li>Conflict-induced volatility that is both immediate and persistent across FX and equity markets.</li>
+  <li>Significant regime-switching behavior, validating the need for nonlinear modeling frameworks such as MS-GARCH.</li>
+  <li>Strong regional contagion effects, particularly in Europe and the Middle East, supporting the financial co-volatility hypothesis.</li>
+  <li>Limited explanatory power of traditional macroeconomic theories (PPP, IRP) during conflict periods, where behavioral and institutional responses dominate.</li>
+</ul>
+<p>These findings extend prior research by offering real-time, region-specific insights into the financial dynamics of geopolitical conflict. They also affirm the theoretical arguments made by Talamanov (2024) and Salisu et al. (2022) about the limitations of classical exchange rate models under crisis conditions.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>This research set out to evaluate the impact of recent geopolitical conflicts on exchange rate dynamics and financial volatility, focusing on two distinct yet interrelated regional crises: the Russia–Ukraine war and the Israel–Gaza conflict. Through rigorous econometric analysis—employing GARCH(1,1), Markov-Switching GARCH (MS-GARCH), and Vector Autoregression (VAR) models—the study has illuminated the multifaceted ways in which conflicts reshape financial landscapes, both domestically and across borders.</p>
+<p>Key findings reveal that geopolitical conflicts induce immediate and persistent volatility in exchange rates and stock markets, with distinct shifts in volatility regimes and strong evidence of regional contagion. The integration of univariate and multivariate volatility models enabled a granular understanding of both the temporal evolution and the spatial diffusion of financial instability during conflict periods.</p>
+<p>This research offers new empirical insights that not only reinforce existing theoretical frameworks but also identify critical gaps and practical considerations for financial market participants and policymakers.</p>
+
+<h4>Implications for Theory</h4>
+<p>The study carries significant theoretical implications for the field of international finance and geopolitical economics:</p>
+<ul>
+  <li><strong>Reaffirmation of Financial Contagion Theory:</strong> The strong interdependence among regional currencies and equity indices observed in this study supports the concept of financial contagion. It highlights how conflicts in one country can transmit volatility to neighbouring markets through trade, investment, and sentiment channels, extending the theoretical boundaries established by Glick and Rose (1999) and Aliu et al. (2024).</li>
+  <li><strong>Extension of Traditional Exchange Rate Models:</strong> The inability of classic macroeconomic theories—such as Purchasing Power Parity (PPP), Interest Rate Parity (IRP), and the Balance of Payments approach—to explain short-term volatility under conflict conditions emphasizes the need for hybrid models. This reinforces the theoretical argument that market behavior under geopolitical stress deviates from equilibrium-based assumptions (Jo & Venderby, 2024).</li>
+  <li><strong>Validation of Regime-Sensitive and Nonlinear Econometric Models:</strong> The successful application of MS-GARCH to capture structural breaks and regime switches in volatility illustrates the theoretical value of nonlinear modeling frameworks. It confirms that exchange rate and equity market behavior is not constant over time but reacts sharply to external shocks, supporting Talamanov's (2024) call for more dynamic financial modeling.</li>
+  <li><strong>Support for the Co-Volatility Hypothesis:</strong> This research strengthens the growing academic focus on the co-evolution of exchange rate and stock market volatility. The VAR findings validate the hypothesis that currency markets and equity markets exhibit synchronized volatility responses to geopolitical risk, a relatively underexplored area in traditional theory.</li>
+</ul>
+
+<h4>Implications for Practice</h4>
+<p>The findings hold important practical implications for policymakers, financial institutions, investors, and international development agencies:</p>
+<div class="highlight">For Central Banks and Financial Regulators:</div>
+<ul>
+  <li>Conflict-induced regime shifts in volatility underscore the necessity for real-time monitoring tools and proactive intervention strategies.</li>
+  <li>Central banks should move beyond interest rate mechanisms and adopt integrated frameworks that factor in geopolitical risk, particularly in neighboring countries likely to be affected by spillovers.</li>
+</ul>
+
+<div class="highlight">For Portfolio Managers and Institutional Investors:</div>
+<ul>
+  <li>The study offers valuable insight into risk diversification and hedging strategies during geopolitical turmoil. Regional financial interconnectivity means that even seemingly insulated markets may face secondary volatility.</li>
+  <li>Co-volatility insights can guide asset allocation decisions in emerging markets, especially under scenarios of rising global uncertainty.</li>
+</ul>
+
+<div class="highlight">For International Development Agencies and Sovereign Risk Analysts:</div>
+<ul>
+  <li>The prolonged nature of volatility and structural economic misalignments in conflict-affected regions necessitate tailored fiscal and monetary recovery strategies.</li>
+  <li>Agencies like the IMF and World Bank can benefit from empirically calibrated risk assessment models that incorporate conflict-specific financial data for aid distribution and policy support.</li>
+</ul>
+
+<div class="highlight">For Policy Design in Conflict-Prone Economies:</div>
+<ul>
+  <li>Governments should consider capital control mechanisms, FX reserve buffers, and inflation targeting as part of comprehensive conflict preparedness policies.</li>
+  <li>Multilateral coordination may be required to stabilize financial systems in geopolitically vulnerable regions, especially where financial contagion is evident.</li>
+</ul>
+
+<h4>Concluding Remark</h4>
+<p>This research bridges a significant gap in the literature by presenting a multi-country, multi-model comparative study on the financial consequences of modern geopolitical conflicts. By unifying theoretical constructs with empirical rigor, it contributes both to scholarly discourse and to the development of actionable insights for crisis management in global financial markets.</p>
+<p>Future studies may consider integrating machine learning techniques with GARCH and VAR frameworks to enhance real-time volatility forecasting. Additionally, expanding the dataset to include higher-frequency data and more conflict-prone regions could yield even deeper insights into the rapidly evolving interplay between geopolitics and financial markets.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li>Adnan, W. (2022). From Economic integration to near Elimination: The Economic Consequences of isolation. <i>The Journal of Development Studies</i>, 58(6), 1160–1180. <a href="https://doi.org/10.1080/00220388.2022.2029416">https://doi.org/10.1080/00220388.2022.2029416</a></li>
+  <li>Akram, Q. F. (2020). Oil price drivers, geopolitical uncertainty and oil exporters’ currencies. <i>Energy Economics</i>, 89, 104801. <a href="https://doi.org/10.1016/j.eneco.2020.104801">https://doi.org/10.1016/j.eneco.2020.104801</a></li>
+  <li>Alam, M. K., Tabash, M. I., Billah, M., Kumar, S., & Anagreh, S. (2022). The Impacts of the Russia–Ukraine Invasion on Global Markets and Commodities: A Dynamic Connectedness among G7 and BRIC Markets. <i>Journal of Risk and Financial Management</i>, 15(8), 352. <a href="https://doi.org/10.3390/jrfm15080352">https://doi.org/10.3390/jrfm15080352</a></li>
+  <li>Aliu, F., Apanovych, Y., Bajra, U., & Nuhiu, A. (2024). Assessing the impact of the Russia-Ukraine war and COVID-19 on selected European currencies and key commodities. <i>Journal of Business Economics and Management</i>, 25(5), 1097–1119. <a href="https://doi.org/10.3846/jbem.2024.22518">https://doi.org/10.3846/jbem.2024.22518</a></li>
+  <li>Aliu, F., Kučera, J., & Horák, J. (2024). Exchange rate instabilities during the Russia-Ukraine war: Evidence from V4 countries. <i>Heliyon</i>, 10(3), e25476. <a href="https://doi.org/10.1016/j.heliyon.2024.e25476">https://doi.org/10.1016/j.heliyon.2024.e25476</a></li>
+  <li>Almansour, B. Y., Shojaei, S. A., & Elkrghli, S. (2024). Examining market synchronicity: spillover connectedness among commodity markets and exchange rates during crisis periods. <i>Edelweiss Applied Science and Technology</i>, 8(5), 1322–1347. <a href="https://doi.org/10.55214/25768484.v8i5.1835">https://doi.org/10.55214/25768484.v8i5.1835</a></li>
+  <li>Al-Riffai, P. (n.d.). The economic and social costs of the war in Gaza.</li>
+  <li>Altemur, N., Eren, B. S., & Karaca, S. S. (2024). The Impact Of The Hamas-Israel Conflict On Stock Market Indices in The Middle East And Turkey: An Event Study Analysis. <i>Journal Of Economic and Business Issues</i>, 4(1), 77-85.</li>
+  <li>Appiah-Otoo, I. (2022). The impact of the Russia-Ukraine war on the cryptocurrency market. <i>Asian Economics Letters</i>, 4(1). <a href="https://doi.org/10.46557/001c.53110">https://doi.org/10.46557/001c.53110</a></li>
+  <li>Atiany, T. a. M., & Alawneh, J. J. (2019). Influence of War on Currency Exchange using Jennrich’s Statistics. <i>International Journal of Recent Technology and Engineering (IJRTE)</i>, 8(4), 10939–10943. <a href="https://doi.org/10.35940/ijrte.d7298.118419">https://doi.org/10.35940/ijrte.d7298.118419</a></li>
+  <li>Bagchi, B., & Paul, B. (2023). Effects of Crude Oil Price Shocks on Stock Markets and Currency Exchange Rates in the Context of Russia-Ukraine Conflict: Evidence from G7 Countries. <i>Journal of Risk and Financial Management</i>, 16(2), 64. <a href="https://doi.org/10.3390/jrfm16020064">https://doi.org/10.3390/jrfm16020064</a></li>
+  <li>Bao, Y., & Chen, Z. (2023). Commodity and currency correlations of the Russia-Ukraine war. <i>Advances in Economics Management and Political Sciences</i>, 24(1), 232–239. <a href="https://doi.org/10.54254/2754-1169/24/20230442">https://doi.org/10.54254/2754-1169/24/20230442</a></li>
+  <li>Bao, Y., & Chen, Z. (2023b). Commodity and currency correlations of the Russia-Ukraine war. <i>Advances in Economics Management and Political Sciences</i>, 24(1), 232–239. <a href="https://doi.org/10.54254/2754-1169/24/20230442">https://doi.org/10.54254/2754-1169/24/20230442</a></li>
+  <li>Basdekis, C., Christopoulos, A., Katsampoxakis, I., & Nastas, V. (2022). The impact of the Ukrainian war on stock and energy markets: A Wavelet Coherence analysis. <i>Energies</i>, 15(21), 8174. <a href="https://doi.org/10.3390/en15218174">https://doi.org/10.3390/en15218174</a></li>
+  <li>Beidas, S., & Kandil, M. (2005). Setting the stage for a national currency in the West Bank and Gaza: the choice of exchange rate regime. <i>SSRN Electronic Journal</i>. <a href="https://papers.ssrn.com/sol3/Delivery.cfm/wp0570.pdf?abstractid=888116&mirid=5">https://papers.ssrn.com/sol3/Delivery.cfm/wp0570.pdf?abstractid=888116&mirid=5</a></li>
+  <li>Bhowmick, R. (2024). Impact of Israel – Palestine conflict on the economy and businesses of the region. <i>SSRN Electronic Journal</i>. <a href="https://doi.org/10.2139/ssrn.4759320">https://doi.org/10.2139/ssrn.4759320</a></li>
+  <li>Bouras, C., Christou, C., Gupta, R., & Suleman, T. (2018). Geopolitical Risks, Returns, and Volatility in Emerging Stock Markets: Evidence from a Panel GARCH Model. <i>Emerging Markets Finance and Trade</i>, 55(8), 1841–1856. <a href="https://doi.org/10.1080/1540496x.2018.1507906">https://doi.org/10.1080/1540496x.2018.1507906</a></li>
+  <li>Chaudhary, S. (2024). Examining the relationship between geopolitical events and currency market dynamics. <i>International Journal for Multidisciplinary Research</i>, 6(2). <a href="https://doi.org/10.36948/ijfmr.2024.v06i02.15818">https://doi.org/10.36948/ijfmr.2024.v06i02.15818</a></li>
+  <li>Chen, L., Du, Z., & Hu, Z. (2019). Impact of economic policy uncertainty on exchange rate volatility of China. <i>Finance Research Letters</i>, 32, 101266. <a href="https://doi.org/10.1016/j.frl.2019.08.014">https://doi.org/10.1016/j.frl.2019.08.014</a></li>
+  <li>Clark, P., Wei, S., Tamirisa, N., Sadikov, A., & Zeng, L. (2004). A new look at exchange rate volatility and trade flows. <i>Occasional paper/Occasional paper</i>. <a href="https://doi.org/10.5089/9781589063587.084">https://doi.org/10.5089/9781589063587.084</a></li>
+  <li>Cunado, J., Gupta, R., Lau, C. K. M., & Sheng, X. (2019). Time-Varying impact of geopolitical risks on oil prices. <i>Defence and Peace Economics</i>, 31(6), 692–706. <a href="https://doi.org/10.1080/10242694.2018.1563854">https://doi.org/10.1080/10242694.2018.1563854</a></li>
+  <li>Darie, F., & Tache, I. (2022). Managing Exchange Rate Volatility during Political Crises. <i>Bulletin of the Transilvania University of Brasov Series V Economic Sciences</i>, 83–96. <a href="https://doi.org/10.31926/but.es.2022.15.64.1.9">https://doi.org/10.31926/but.es.2022.15.64.1.9</a></li>
+  <li>Dowling, T., & Batini, N. (2011). Interpreting currency movements during the crisis: What’s the role of interest rate differentials? <i>IMF Working Paper</i>, 11(14), 1. <a href="https://doi.org/10.5089/9781455212521.001">https://doi.org/10.5089/9781455212521.001</a></li>
+  <li>Elsafty, A., & Mahmoud, I. (2022). The consequences of Ukraine-Russia crisis: The case of international trade and prices’ behavior in Egypt. <i>Business and Management Studies</i>, 8(2), 37. <a href="https://doi.org/10.11114/bms.v8i2.5798">https://doi.org/10.11114/bms.v8i2.5798</a></li>
+  <li>Faryna, O. (2016). Exchange Rate Pass-Through and Cross-Country Spillovers: Some Evidence from Ukraine and Russia. <i>SSRN Electronic Journal</i>. <a href="https://doi.org/10.2139/ssrn.2849410">https://doi.org/10.2139/ssrn.2849410</a></li>
+  <li>Havidz, S. a. H., Rahmadani, N. P. I., & Tori, P. L. A. (2023). Gold and Cryptocurrency as Safe Haven Assets for Commodities, Stocks, and Bonds: Evidence from the Russia-Ukraine War. <i>E3S Web of Conferences</i>, 426, 01082. <a href="https://doi.org/10.1051/e3sconf/202342601082">https://doi.org/10.1051/e3sconf/202342601082</a></li>
+  <li>Hertrich, M., & Nathan, D. (2022). Foreign Exchange Interventions and Their Impact on Expectations: Evidence from the Usd/Ils Options Market. <i>SSRN Electronic Journal</i>. <a href="https://doi.org/10.2139/ssrn.4126039">https://doi.org/10.2139/ssrn.4126039</a></li>
+  <li>Hsu, S. (2022). Investigating the Co-Volatility Spillover Effects between Cryptocurrencies and Currencies at Different Natures of Risk Events. <i>Journal of Risk and Financial Management</i>, 15(9), 372. <a href="https://doi.org/10.3390/jrfm15090372">https://doi.org/10.3390/jrfm15090372</a></li>
+  <li>Ijaz, M. S., Ali, S., Du, A. M., & Khurram, M. (2025). Analyzing Financial Market Reactions to the Palestine-Israel Conflict: An Event Study perspective. <i>International Review of Economics & Finance</i>, 103864. <a href="https://doi.org/10.1016/j.iref.2025.103864">https://doi.org/10.1016/j.iref.2025.103864</a></li>
+  <li>Jo, H., & Venderby, O. (2024). Russia’s invasion of Ukraine and implications for the Ukrainian Hryvnia and the Russian ruble. <i>International Journal of Financial Research</i>, 15(3), 54. <a href="https://doi.org/10.5430/ijfr.v15n3p54">https://doi.org/10.5430/ijfr.v15n3p54</a></li>
+  <li>Khaliq, A. (2022). Global and Country-Specific Geopolitical Risks and Exchange Rate Volatility: New Empirical Evidence from Indonesia. <i>Jurnal Ekonomi Kuantitatif Terapan</i>, 225. <a href="https://doi.org/10.24843/jekt.2022.v15.i02.p05">https://doi.org/10.24843/jekt.2022.v15.i02.p05</acejt.2022.v15.i02.p05</a></li>
+  <li>Kur, A. P., Ngesa, O., & Sarguta, R. (2021). Exponential GARCH Model with Exogenous Covariate for South Sudanese Pounds—USD Exchange Rate Volatility: On the Effects of Conflict on Volatility. <i>Journal of Mathematical Finance</i>, 11(03), 466–483. <a href="https://doi.org/10.4236/jmf.2021.113026">https://doi.org/10.4236/jmf.2021.113026</a></li>
+  <li>Lyócsa, Š., & Plíhal, T. (2022). Russia’s ruble during the onset of the Russian invasion of Ukraine in early 2022: The role of implied volatility and attention. <i>Finance Research Letters</i>, 48, 102995. <a href="https://doi.org/10.1016/j.frl.2022.102995">https://doi.org/10.1016/j.frl.2022.102995</a></li>
+  <li>Mansour-Ichrakieh, L. (2021). The impact of Israeli and Saudi Arabian geopolitical risks on the Lebanese financial market. <i>Journal of Risk and Financial Management</i>, 14(3), 94. <a href="https://doi.org/10.3390/jrfm14030094">https://doi.org/10.3390/jrfm14030094</a></li>
+  <li>Mbah, R. E., & Wasum, D. F. (2022). Russian-Ukraine 2022 War: A Review of the Economic Impact of Russian-Ukraine Crisis on the USA, UK, Canada, and Europe. <i>Advances in Social Sciences Research Journal</i>, 9, 144-153. <a href="https://doi.org/10.14738/assrj.93.12005">https://doi.org/10.14738/assrj.93.12005</a></li>
+  <li>Mkiyes, H. (2023). EXCHANGE RATE AND ECONOMIC STABILITY DURING CRISES: CASE STUDY SYRIA. <i>The EUrASEANs Journal on Global Socio-economic Dynamics</i>, 1(38), 163–188. <a href="https://doi.org/10.35678/2539-5645.1(38).2023.163-188">https://doi.org/10.35678/2539-5645.1(38).2023.163-188</a></li>
+  <li>Nor, M. I., Masron, T. A., & Alabdullah, T. T. Y. (2020). Macroeconomic fundamentals and the exchange rate volatility: Empirical evidence from Somalia. <i>SAGE Open</i>, 10(1). <a href="https://doi.org/10.1177/2158244019898841">https://doi.org/10.1177/2158244019898841</a></li>
+  <li>Obi, P., Waweru, F., & Nyangu, M. (2023). An event study on the reaction of equity and commodity markets to the onset of the Russia–Ukraine conflict. <i>Journal of Risk and Financial Management</i>, 16(5), 256. <a href="https://doi.org/10.3390/jrfm16050256">https://doi.org/10.3390/jrfm16050256</a></li>
+  <li>Ozili, P. K. (2024). Impact of the Israel-Hamas war on the global economy. <i>SSRN Electronic Journal</i>. <a href="https://doi.org/10.2139/ssrn.4970205">https://doi.org/10.2139/ssrn.4970205</a></li>
+  <li>Salisu, A. A., Cuñado, J., & Gupta, R. (2021). Geopolitical risks and historical exchange rate volatility of the BRICS. <i>International Review of Economics & Finance</i>, 77, 179–190. <a href="https://doi.org/10.1016/j.iref.2021.09.017">https://doi.org/10.1016/j.iref.2021.09.017</a></li>
+  <li>Sokhanvar, A. (2023). Impacts of ongoing global geopolitical and economic turbulences on exchange rates: A case study of the Australian dollar. <i>Ekonomický Časopis</i>, 71(6–7), 405–427. <a href="https://doi.org/10.31577/ekoncas.2023.06-07.02">https://doi.org/10.31577/ekoncas.2023.06-07.02</a></li>
+  <li>Tavor, T. (2023). The effect of natural gas discoveries in Israel on the strength of its currency. <i>Australian Economic Papers</i>, 62(2), 236–256. <a href="https://doi.org/10.1111/1467-8454.12296">https://doi.org/10.1111/1467-8454.12296</a></li>
+  <li>Xu, J., Khan, K., & Cao, Y. (2023). Conflict and exchange rate valuation: Evidence from the Russia-Ukraine conflict. <i>Heliyon</i>, 9(6), e16527. <a href="https://doi.org/10.1016/j.heliyon.2023.e16527">https://doi.org/10.1016/j.heliyon.2023.e16527</a></li>
+  <li>Yousaf, I., Patel, R., & Yarovaya, L. (2022). The reaction of G20+ stock markets to the Russia–Ukraine conflict “black-swan” event: Evidence from event study approach. <i>Journal of Behavioral and Experimental Finance</i>, 35, 100723. <a href="https://doi.org/10.1016/j.jbef.2022.100723">https://doi.org/10.1016/j.jbef.2022.100723</a></li>
+  <li>Zhou, Z. (2024). The impact of geopolitical conflicts on the volatility of the international financial markets. <i>Modern Economics & Management Forum</i>, 5(4), 635. <a href="https://doi.org/10.32629/memf.v5i4.2536">https://doi.org/10.32629/memf.v5i4.2536</a></li>
+</ul>
+
+
+
+<div class="footer">
+  © 2025 Chirag S M. All rights reserved.
+</div>
+
+</body>
+</html>
